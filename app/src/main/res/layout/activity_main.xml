@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/C1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/K"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="400dp"
+            android:layout_weight="1"
+            android:text="@string/K"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/L1"
+            app:layout_constraintEnd_toStartOf="@+id/U"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/L1" />
+
+        <TextView
+            android:id="@+id/U"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="400dp"
+            android:layout_weight="1"
+            android:text="@string/U"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/L1"
+            app:layout_constraintEnd_toStartOf="@+id/N1"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/K"
+            app:layout_constraintTop_toTopOf="@id/L1" />
+
+        <TextView
+            android:id="@+id/N1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="400dp"
+            android:layout_weight="1"
+            android:text="@string/N1"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/L1"
+            app:layout_constraintEnd_toStartOf="@+id/A"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/U"
+            app:layout_constraintTop_toTopOf="@id/L1" />
+
+        <TextView
+            android:id="@+id/A"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="400dp"
+            android:layout_weight="1"
+            android:text="@string/A"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/L1"
+            app:layout_constraintEnd_toStartOf="@+id/F"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/N1"
+            app:layout_constraintTop_toTopOf="@id/L1" />
+
+        <TextView
+            android:id="@+id/F"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="400dp"
+            android:layout_weight="1"
+            android:text="@string/F"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/L1"
+            app:layout_constraintEnd_toStartOf="@+id/I"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/A"
+            app:layout_constraintTop_toTopOf="@id/L1" />
+
+        <TextView
+            android:id="@+id/I"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="400dp"
+            android:layout_weight="1"
+            android:text="@string/I"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/L1"
+            app:layout_constraintEnd_toStartOf="@+id/N2"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/F"
+            app:layout_constraintTop_toTopOf="@id/L1" />
+
+        <TextView
+            android:id="@+id/N2"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="400dp"
+            android:layout_weight="1"
+            android:text="@string/N2"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="@+id/L1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/I"
+            app:layout_constraintTop_toTopOf="@id/L1" />
+
+        <LinearLayout
+            android:id="@+id/L1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resultField"
+                android:layout_width="match_parent"
+                android:layout_height="176dp"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn7"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="numPress"
+                    android:text="@string/btn7"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btn8"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="numPress"
+                    android:text="@string/btn8"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btn9"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="numPress"
+                    android:text="@string/btn9"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="numPress"
+                    android:text="@string/btn4"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="numPress"
+                    android:text="@string/btn5"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btn6"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="numPress"
+                    android:text="@string/btn6"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="numPress"
+                    android:text="@string/btn1"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="numPress"
+                    android:text="@string/btn2"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="numPress"
+                    android:text="@string/btn3"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn0"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="2"
+                    android:onClick="numPress"
+                    android:text="@string/btn0"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btnPoint"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:onClick="dotPress"
+                    android:text="@string/btnPoint"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
