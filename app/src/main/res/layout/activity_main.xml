@@ -1,108 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/resultField"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:textSize="30sp" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/C1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/K"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="400dp"
-            android:layout_weight="1"
-            android:text="@string/K"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="@+id/L1"
-            app:layout_constraintEnd_toStartOf="@+id/U"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/L1" />
-
-        <TextView
-            android:id="@+id/U"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="400dp"
-            android:layout_weight="1"
-            android:text="@string/U"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="@+id/L1"
-            app:layout_constraintEnd_toStartOf="@+id/N1"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toEndOf="@+id/K"
-            app:layout_constraintTop_toTopOf="@id/L1" />
-
-        <TextView
-            android:id="@+id/N1"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="400dp"
-            android:layout_weight="1"
-            android:text="@string/N1"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="@+id/L1"
-            app:layout_constraintEnd_toStartOf="@+id/A"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toEndOf="@+id/U"
-            app:layout_constraintTop_toTopOf="@id/L1" />
-
-        <TextView
-            android:id="@+id/A"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="400dp"
-            android:layout_weight="1"
-            android:text="@string/A"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="@+id/L1"
-            app:layout_constraintEnd_toStartOf="@+id/F"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toEndOf="@+id/N1"
-            app:layout_constraintTop_toTopOf="@id/L1" />
-
-        <TextView
-            android:id="@+id/F"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="400dp"
-            android:layout_weight="1"
-            android:text="@string/F"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="@+id/L1"
-            app:layout_constraintEnd_toStartOf="@+id/I"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toEndOf="@+id/A"
-            app:layout_constraintTop_toTopOf="@id/L1" />
-
-        <TextView
-            android:id="@+id/I"
-            android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="400dp"
-            android:layout_weight="1"
-            android:text="@string/I"
-            android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="@+id/L1"
-            app:layout_constraintEnd_toStartOf="@+id/N2"
-            app:layout_constraintHorizontal_chainStyle="spread"
-            app:layout_constraintStart_toEndOf="@+id/F"
-            app:layout_constraintTop_toTopOf="@id/L1" />
+        android:layout_height="69dp"
+        android:layout_below="@+id/resultField"
+        android:layout_marginTop="1dp">
 
         <TextView
             android:id="@+id/N2"
@@ -110,29 +24,119 @@
             android:layout_height="70dp"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="400dp"
             android:layout_weight="1"
             android:text="@string/N2"
             android:textSize="40sp"
-            app:layout_constraintBottom_toBottomOf="@+id/L1"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toEndOf="@+id/I"
-            app:layout_constraintTop_toTopOf="@id/L1" />
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <TextView
+            android:id="@+id/K"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:layout_weight="1"
+            android:text="@string/K"
+            android:textSize="40sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/U"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/U"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/U"
+            android:textSize="40sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/N1"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/K"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/N1"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/N1"
+            android:textSize="40sp"
+
+            app:layout_constraintEnd_toStartOf="@+id/A"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/U"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/A"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/A"
+            android:textSize="40sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/F"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/N1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/F"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/F"
+            android:textSize="40sp"
+
+            app:layout_constraintEnd_toStartOf="@+id/I"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/A"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/I"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/I"
+            android:textSize="40sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/N2"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toEndOf="@+id/F"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
         <LinearLayout
+            android:layout_below="@+id/C1"
             android:id="@+id/L1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/resultField"
-                android:layout_width="match_parent"
-                android:layout_height="176dp"
-                android:textSize="30sp" />
-
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -255,5 +259,4 @@
                     android:textSize="24sp" />
             </LinearLayout>
         </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+</RelativeLayout>
