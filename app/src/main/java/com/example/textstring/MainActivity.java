@@ -24,59 +24,48 @@ public class MainActivity extends AppCompatActivity {
     public void numPress(View view) {
         int id = view.getId();
         if (id == R.id.btn0) {
-            resultField.getText().toString();
-            resultField.setText("0");
+            resultField.setText(resultField.getText().toString() + "0");
         }
         if (id == R.id.btn1) {
-            resultField.getText().toString();
-            resultField.setText("1");
+            resultField.setText(resultField.getText().toString() + "1");
         }
         if (id == R.id.btn2) {
-            resultField.getText().toString();
-            resultField.setText("2");
+            resultField.setText(resultField.getText().toString() + "2");
         }
-        if (id==R.id.btn3){
-            resultField.getText().toString();
-            resultField.setText("3");
+        if (id == R.id.btn3) {
+            resultField.setText(resultField.getText().toString() + "3");
         }
-        if (id==R.id.btn4){
-            resultField.getText().toString();
-            resultField.setText("4");
+        if (id == R.id.btn4) {
+            resultField.setText(resultField.getText().toString() + "4");
         }
-        if (id==R.id.btn5){
-            resultField.getText().toString();
-            resultField.setText("5");
+        if (id == R.id.btn5) {
+            resultField.setText(resultField.getText().toString() + "5");
         }
-        if (id==R.id.btn6){
-            resultField.getText().toString();
-            resultField.setText("6");
+        if (id == R.id.btn6) {
+            resultField.setText(resultField.getText().toString() + "6");
         }
-        if (id==R.id.btn7){
-            resultField.getText().toString();
-            resultField.setText("7");
+        if (id == R.id.btn7) {
+            resultField.setText(resultField.getText().toString() + "7");
         }
-        if (id==R.id.btn8){
-            resultField.getText().toString();
-            resultField.setText("8");
+        if (id == R.id.btn8) {
+            resultField.setText(resultField.getText().toString() + "8");
         }
-        if (id==R.id.btn9){
-            resultField.getText().toString();
-            resultField.setText("9");
+        if (id == R.id.btn9) {
+            resultField.setText(resultField.getText().toString() + "9");
         }
     }
-    public void dotPress(View v){
+
+    public void dotPress(View v) {
         int id = v.getId();
-        if (id==R.id.btnPoint){
-            resultField.getText().toString();
-            resultField.setText(".");
+        if (id == R.id.btnPoint) {
+            resultField.setText(resultField.getText().toString() + ".");
         }
     }
 
     private void initViews() {
-        resultField  = findViewById(R.id.resultField);
+        resultField = findViewById(R.id.resultField);
         btnPoint = findViewById(R.id.btnPoint);
-        btn0 = findViewById(R.id.btn0);
-        btn1 = findViewById(R.id.btn1);
+
 
     }
 
